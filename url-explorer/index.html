@@ -1,1 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-project 2: URL Explorer Tĩnh</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
+    <header>
+        <div class="container">
+            <h1>🌐 URL Explorer Tĩnh</h1>
+            <p>Tìm hiểu về Domain, Hosting, URL và cấu trúc của một đường dẫn Internet.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="concepts-grid">
+            <div class="card">
+                <div class="card-icon">🏠</div>
+                <h3>Domain (Tên miền)</h3>
+                <p>Là địa chỉ định danh thay thế cho dãy số IP khô khan của máy chủ, giúp con người dễ dàng ghi nhớ để truy cập trang web (Ví dụ: <code>google.com</code>, <code>github.com</code>).</p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">📦</div>
+                <h3>Hosting (Lưu trữ)</h3>
+                <p>Là không gian lưu trữ trên các máy chủ (Server) luôn kết nối Internet. Nó chứa toàn bộ mã nguồn, hình ảnh, cơ sở dữ liệu để trang web có thể hoạt động 24/7.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🔗</div>
+                <h3>URL (Đường dẫn)</h3>
+                <p>Là địa chỉ định vị tài nguyên duy nhất trên Internet (Uniform Resource Locator). URL chỉ ra chính xác cách thức và nơi để lấy một tài nguyên cụ thể.</p>
+            </div>
+        </section>
+
+        <section class="url-visualizer">
+            <h2>🔎 Phân tích cấu trúc URL mẫu</h2>
+            <p class="subtitle">Nhấp vào từng thành phần của URL bên dưới để xem giải thích chi tiết:</p>
+
+            <div class="url-box" id="url1">
+                <h3>Ví dụ 1: URL Trang tìm kiếm của một cửa hàng</h3>
+                <div class="url-display">
+                    <span class="part protocol" data-target="p1">https://</span><span class="part domain" data-target="d1">shopee.vn</span><span class="part path" data-target="pa1">/search</span><span class="part query" data-target="q1">?keyword=laptop</span>
+                </div>
+                <div class="explanation-box" id="exp-url1">
+                    <p class="placeholder-text">👉 Chọn một thành phần của URL phía trên để xem giải thích.</p>
+                    <p class="detail-text p1 hidden"><strong>Protocol (Giao thức):</strong> <code>https://</code> - Giao thức truyền tải dữ liệu bảo mật siêu văn bản, mã hóa thông tin giữa trình duyệt và máy chủ.</p>
+                    <p class="detail-text d1 hidden"><strong>Domain (Tên miền):</strong> <code>shopee.vn</code> - Tên miền chính của website, định danh cho máy chủ của Shopee tại Việt Nam.</p>
+                    <p class="detail-text pa1 hidden"><strong>Path (Đường dẫn):</strong> <code>/search</code> - Dẫn tới thư mục hoặc tính năng tìm kiếm sản phẩm cụ thể trên hệ thống.</p>
+                    <p class="detail-text q1 hidden"><strong>Query String (Tham số):</strong> <code>?keyword=laptop</code> - Gửi yêu cầu dữ liệu lên server. Ở đây tham số <code>keyword</code> có giá trị là <code>laptop</code>.</p>
+                </div>
+            </div>
+
+            <div class="url-box" id="url2">
+                <h3>Ví dụ 2: URL Bài viết học tập trên GitHub Pages</h3>
+                <div class="url-display">
+                    <span class="part protocol" data-target="p2">https://</span><span class="part subdomain" data-target="sd2">nghia.</span><span class="part domain" data-target="d2">github.io</span><span class="part path" data-target="pa2">/blog/css-tips.html</span>
+                </div>
+                <div class="explanation-box" id="exp-url2">
+                    <p class="placeholder-text">👉 Chọn một thành phần của URL phía trên để xem giải thích.</p>
+                    <p class="detail-text p2 hidden"><strong>Protocol (Giao thức):</strong> <code>https://</code> - Giao thức an toàn giúp bảo vệ dữ liệu người dùng truy cập blog.</p>
+                    <p class="detail-text sd2 hidden"><strong>Subdomain (Tên miền phụ):</strong> <code>nghia.</code> - Tên miền phụ đại diện cho tài khoản cá nhân được cấu hình trên hệ thống GitHub.</p>
+                    <p class="detail-text d2 hidden"><strong>Domain (Tên miền chính):</strong> <code>github.io</code> - Tên miền cung cấp dịch vụ lưu trữ trang web tĩnh miễn phí của GitHub.</p>
+                    <p class="detail-text pa2 hidden"><strong>Path (Đường dẫn/Tệp tin):</strong> <code>/blog/css-tips.html</code> - Trỏ trực tiếp đến tệp tin <code>css-tips.html</code> nằm trong thư mục <code>blog</code>.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Mini-project 2 - Được thiết kế hoàn chỉnh bằng HTML, CSS và Javascript sạch.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -3,77 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini-project 2: URL Explorer Tĩnh (Thuần HTML)</title>
+    <title>Mini-project 2: URL Explorer Tĩnh</title>
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body style="font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #1e293b; line-height: 1.6; margin: 0; padding: 0; box-sizing: border-box;">
+<body>
 
-    <header style="background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%); color: white; padding: 3rem 0; text-align: center; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
-        <div style="width: 90%; max-width: 1100px; margin: 0 auto;">
-            <h1 style="font-size: 2.5rem; margin: 0 0 0.5rem 0;">🌐 URL Explorer Tĩnh</h1>
-            <p style="font-size: 1.1rem; margin: 0; opacity: 0.9;">Tìm hiểu về Domain, Hosting, URL và cấu trúc của một đường dẫn Internet.</p>
+    <header>
+        <div class="container">
+            <h1>🌐 URL Explorer Tĩnh</h1>
+            <p>Tìm hiểu về Domain, Hosting, URL và cấu trúc của một đường dẫn Internet.</p>
         </div>
     </header>
 
-    <main style="width: 90%; max-width: 1100px; margin: 0 auto; padding: 3rem 0;">
-        
-        <section style="display: block; margin-bottom: 4rem;">
-            <div style="background-color: #ffffff; padding: 2rem; border-radius: 12px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); margin-bottom: 1.5rem;">
-                <div style="font-size: 2.5rem; margin-bottom: 1rem;">🏠</div>
-                <h3 style="margin: 0 0 0.75rem 0; color: #0f172a;">Domain (Tên miền)</h3>
-                <p style="margin: 0;">Là địa chỉ định danh thay thế cho dãy số IP khô khan của máy chủ, giúp con người dễ dàng ghi nhớ để truy cập trang web (Ví dụ: <code style="background-color: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: monospace; color: #ef4444;">google.com</code>, <code style="background-color: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: monospace; color: #ef4444;">github.com</code>).</p>
+    <main class="container">
+        <section class="concepts-grid">
+            <div class="card">
+                <div class="card-icon">🏠</div>
+                <h3>Domain (Tên miền)</h3>
+                <p>Là địa chỉ định danh thay thế cho dãy số IP khô khan của máy chủ, giúp con người dễ dàng ghi nhớ để truy cập trang web (Ví dụ: <code>google.com</code>, <code>github.com</code>).</p>
             </div>
 
-            <div style="background-color: #ffffff; padding: 2rem; border-radius: 12px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); margin-bottom: 1.5rem;">
-                <div style="font-size: 2.5rem; margin-bottom: 1rem;">📦</div>
-                <h3 style="margin: 0 0 0.75rem 0; color: #0f172a;">Hosting (Lưu trữ)</h3>
-                <p style="margin: 0;">Là không gian lưu trữ trên các máy chủ (Server) luôn kết nối Internet. Nó chứa toàn bộ mã nguồn, hình ảnh, cơ sở dữ liệu để trang web có thể hoạt động 24/7.</p>
+            <div class="card">
+                <div class="card-icon">📦</div>
+                <h3>Hosting (Lưu trữ)</h3>
+                <p>Là không gian lưu trữ trên các máy chủ (Server) luôn kết nối Internet. Nó chứa toàn bộ mã nguồn, hình ảnh, cơ sở dữ liệu để trang web có thể hoạt động 24/7.</p>
             </div>
 
-            <div style="background-color: #ffffff; padding: 2rem; border-radius: 12px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);">
-                <div style="font-size: 2.5rem; margin-bottom: 1rem;">🔗</div>
-                <h3 style="margin: 0 0 0.75rem 0; color: #0f172a;">URL (Đường dẫn)</h3>
-                <p style="margin: 0;">Là địa chỉ định vị tài nguyên duy nhất trên Internet (Uniform Resource Locator). URL chỉ ra chính xác cách thức và nơi để lấy một tài nguyên cụ thể.</p>
+            <div class="card">
+                <div class="card-icon">🔗</div>
+                <h3>URL (Đường dẫn)</h3>
+                <p>Là địa chỉ định vị tài nguyên duy nhất trên Internet (Uniform Resource Locator). URL chỉ ra chính xác cách thức và nơi để lấy một tài nguyên cụ thể.</p>
             </div>
         </section>
 
-        <section style="background-color: #ffffff; padding: 2.5rem; border-radius: 12px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);">
-            <h2 style="margin: 0 0 0.5rem 0;">🔎 Phân tích cấu trúc URL mẫu</h2>
-            <p style="color: #64748b; margin: 0 0 2rem 0;">Nhấp vào từng thành phần của URL bên dưới để xem giải thích chi tiết:</p>
+        <section class="url-visualizer">
+            <h2>🔎 Phân tích cấu trúc URL mẫu</h2>
+            <p class="subtitle">Nhấp vào từng thành phần của URL bên dưới để xem giải thích chi tiết:</p>
 
-            <div class="url-box" id="url1" style="background-color: #f8fafc; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem;">
-                <h3 style="font-size: 1.1rem; color: #64748b; margin: 0 0 1rem 0;">Ví dụ 1: URL Trang tìm kiếm của một cửa hàng</h3>
-                <div style="background-color: #0f172a; color: #fff; padding: 1.25rem; border-radius: 6px; font-family: 'Courier New', Courier, monospace; font-size: 1.2rem; overflow-x: auto; white-space: nowrap; margin-bottom: 1rem; box-shadow: inset 0 2px 4px rgba(0,0,0,0.3);">
-                    <span class="part" data-target="p1" style="color: #e11d48; padding: 0.2rem 0.4rem; border-radius: 4px; cursor: pointer; display: inline-block;">https://</span><span class="part" data-target="d1" style="color: #059669; padding: 0.2rem 0.4rem; border-radius: 4px; cursor: pointer; display: inline-block;">shopee.vn</span><span class="part" data-target="pa1" style="color: #2563eb; padding: 0.2rem 0.4rem; border-radius: 4px; cursor: pointer; display: inline-block;">/search</span><span class="part" data-target="q1" style="color: #7c3aed; padding: 0.2rem 0.4rem; border-radius: 4px; cursor: pointer; display: inline-block;">?keyword=laptop</span>
+            <div class="url-box" id="url1">
+                <h3>Ví dụ 1: URL Trang tìm kiếm của một cửa hàng</h3>
+                <div class="url-display">
+                    <span class="part protocol" data-target="p1">https://</span><span class="part domain" data-target="d1">shopee.vn</span><span class="part path" data-target="pa1">/search</span><span class="part query" data-target="q1">?keyword=laptop</span>
                 </div>
-                <div style="background-color: #fff; border-left: 4px solid #2563eb; padding: 1rem; border-radius: 0 4px 4px 0; min-height: 50px;">
-                    <p class="placeholder-text" style="color: #64748b; font-style: italic; margin: 0;">👉 Chọn một thành phần của URL phía trên để xem giải thích.</p>
-                    <p class="detail-text p1" style="display: none; margin: 0;"><strong>Protocol (Giao thức):</strong> <code style="background-color: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: monospace; color: #ef4444;">https://</code> - Giao thức truyền tải dữ liệu bảo mật siêu văn bản, mã hóa thông tin giữa trình duyệt và máy chủ.</p>
-                    <p class="detail-text d1" style="display: none; margin: 0;"><strong>Domain (Tên miền):</strong> <code style="background-color: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: monospace; color: #ef4444;">shopee.vn</code> - Tên miền chính của website, định danh cho máy chủ của Shopee tại Việt Nam.</p>
-                    <p class="detail-text pa1" style="display: none; margin: 0;"><strong>Path (Đường dẫn):</strong> <code style="background-color: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: monospace; color: #ef4444;">/search</code> - Dẫn tới thư mục hoặc tính năng tìm kiếm sản phẩm cụ thể trên hệ thống.</p>
-                    <p class="detail-text q1" style="display: none; margin: 0;"><strong>Query String (Tham số):</strong> <code style="background-color: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: monospace; color: #ef4444;">?keyword=laptop</code> - Gửi yêu cầu dữ liệu lên server. Ở đây tham số <code style="background-color: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: monospace; color: #ef4444;">keyword</code> có giá trị là <code style="background-color: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: monospace; color: #ef4444;">laptop</code>.</p>
+                <div class="explanation-box" id="exp-url1">
+                    <p class="placeholder-text">👉 Chọn một thành phần của URL phía trên để xem giải thích.</p>
+                    <p class="detail-text p1 hidden"><strong>Protocol (Giao thức):</strong> <code>https://</code> - Giao thức truyền tải dữ liệu bảo mật siêu văn bản, mã hóa thông tin giữa trình duyệt và máy chủ.</p>
+                    <p class="detail-text d1 hidden"><strong>Domain (Tên miền):</strong> <code>shopee.vn</code> - Tên miền chính của website, định danh cho máy chủ của Shopee tại Việt Nam.</p>
+                    <p class="detail-text pa1 hidden"><strong>Path (Đường dẫn):</strong> <code>/search</code> - Dẫn tới thư mục hoặc tính năng tìm kiếm sản phẩm cụ thể trên hệ thống.</p>
+                    <p class="detail-text q1 hidden"><strong>Query String (Tham số):</strong> <code>?keyword=laptop</code> - Gửi yêu cầu dữ liệu lên server. Ở đây tham số <code>keyword</code> có giá trị là <code>laptop</code>.</p>
                 </div>
             </div>
 
-            <div class="url-box" id="url2" style="background-color: #f8fafc; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem;">
-                <h3 style="font-size: 1.1rem; color: #64748b; margin: 0 0 1rem 0;">Ví dụ 2: URL Bài viết học tập trên GitHub Pages</h3>
-                <div style="background-color: #0f172a; color: #fff; padding: 1.25rem; border-radius: 6px; font-family: 'Courier New', Courier, monospace; font-size: 1.2rem; overflow-x: auto; white-space: nowrap; margin-bottom: 1rem; box-shadow: inset 0 2px 4px rgba(0,0,0,0.3);">
-                    <span class="part" data-target="p2" style="color: #e11d48; padding: 0.2rem 0.4rem; border-radius: 4px; cursor: pointer; display: inline-block;">https://</span><span class="part" data-target="sd2" style="color: #d97706; padding: 0.2rem 0.4rem; border-radius: 4px; cursor: pointer; display: inline-block;">nghia.</span><span class="part" data-target="d2" style="color: #059669; padding: 0.2rem 0.4rem; border-radius: 4px; cursor: pointer; display: inline-block;">github.io</span><span class="part" data-target="pa2" style="color: #2563eb; padding: 0.2rem 0.4rem; border-radius: 4px; cursor: pointer; display: inline-block;">/blog/css-tips.html</span>
+            <div class="url-box" id="url2">
+                <h3>Ví dụ 2: URL Bài viết học tập trên GitHub Pages</h3>
+                <div class="url-display">
+                    <span class="part protocol" data-target="p2">https://</span><span class="part subdomain" data-target="sd2">nghia.</span><span class="part domain" data-target="d2">github.io</span><span class="part path" data-target="pa2">/blog/css-tips.html</span>
                 </div>
-                <div style="background-color: #fff; border-left: 4px solid #2563eb; padding: 1rem; border-radius: 0 4px 4px 0; min-height: 50px;">
-                    <p class="placeholder-text" style="color: #64748b; font-style: italic; margin: 0;">👉 Chọn một thành phần của URL phía trên để xem giải thích.</p>
-                    <p class="detail-text p2" style="display: none; margin: 0;"><strong>Protocol (Giao thức):</strong> <code style="background-color: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: monospace; color: #ef4444;">https://</code> - Giao thức an toàn giúp bảo vệ dữ liệu người dùng truy cập blog.</p>
-                    <p class="detail-text sd2" style="display: none; margin: 0;"><strong>Subdomain (Tên miền phụ):</strong> <code style="background-color: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: monospace; color: #ef4444;">nghia.</code> - Tên miền phụ đại diện cho tài khoản cá nhân được cấu hình trên hệ thống GitHub.</p>
-                    <p class="detail-text d2" style="display: none; margin: 0;"><strong>Domain (Tên miền chính):</strong> <code style="background-color: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: monospace; color: #ef4444;">github.io</code> - Tên miền cung cấp dịch vụ lưu trữ trang web tĩnh miễn phí của GitHub.</p>
-                    <p class="detail-text pa2" style="display: none; margin: 0;"><strong>Path (Đường dẫn/Tệp tin):</strong> <code style="background-color: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: monospace; color: #ef4444;">/blog/css-tips.html</code> - Trỏ trực tiếp đến tệp tin <code style="background-color: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: monospace; color: #ef4444;">css-tips.html</code> nằm trong thư mục <code style="background-color: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: monospace; color: #ef4444;">blog</code>.</p>
+                <div class="explanation-box" id="exp-url2">
+                    <p class="placeholder-text">👉 Chọn một thành phần của URL phía trên để xem giải thích.</p>
+                    <p class="detail-text p2 hidden"><strong>Protocol (Giao thức):</strong> <code>https://</code> - Giao thức an toàn giúp bảo vệ dữ liệu người dùng truy cập blog.</p>
+                    <p class="detail-text sd2 hidden"><strong>Subdomain (Tên miền phụ):</strong> <code>nghia.</code> - Tên miền phụ đại diện cho tài khoản cá nhân được cấu hình trên hệ thống GitHub.</p>
+                    <p class="detail-text d2 hidden"><strong>Domain (Tên miền chính):</strong> <code>github.io</code> - Tên miền cung cấp dịch vụ lưu trữ trang web tĩnh miễn phí của GitHub.</p>
+                    <p class="detail-text pa2 hidden"><strong>Path (Đường dẫn/Tệp tin):</strong> <code>/blog/css-tips.html</code> - Trỏ trực tiếp đến tệp tin <code>css-tips.html</code> nằm trong thư mục <code>blog</code>.</p>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer style="text-align: center; padding: 2rem 0; color: #64748b; border-top: 1px solid #e2e8f0; background-color: #ffffff; margin-top: 4rem;">
-        <div style="width: 90%; max-width: 1100px; margin: 0 auto;">
-            <p style="margin: 0;">© 2026 Mini-project 2 - Được thiết kế hoàn chỉnh bằng HTML và Javascript sạch.</p>
+    <footer>
+        <div class="container">
+            <p>© 2026 Mini-project 2 - Được thiết kế hoàn chỉnh bằng HTML, CSS và Javascript sạch.</p>
         </div>
     </footer>
 

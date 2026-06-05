@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
     
-    // Thuật toán xử lý việc click vào các thành phần URL để hiện giải thích tương ứng
     const configureUrlInteractive = (urlBoxId) => {
         const urlBox = document.getElementById(urlBoxId);
         if (!urlBox) return;
@@ -11,29 +10,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
         parts.forEach(part => {
             part.addEventListener('click', () => {
-                // Xóa trạng thái active cũ của các thẻ cùng cụm URL
-                parts.forEach(p => p.classList.remove('active'));
+                // Reset style viền của các phần tử khác cùng hàng về mặc định
+                parts.forEach(p => {
+                    p.style.outline = "none";
+                    p.style.fontWeight = "normal";
+                });
                 
-                // Kích hoạt thẻ hiện tại
-                part.classList.add('active');
+                // Thêm viền nổi bật cho phần tử đang click
+                part.style.outline = "2px dashed #fff";
+                part.style.fontWeight = "bold";
                 
                 // Ẩn dòng chữ gợi ý ban đầu
-                if(placeholder) placeholder.classList.add('hidden');
+                if(placeholder) placeholder.style.display = "none";
                 
-                // Ẩn tất cả các văn bản chi tiết trước đó
-                details.forEach(detail => detail.classList.add('hidden'));
+                // Ẩn tất cả các văn bản giải thích chi tiết trước đó
+                details.forEach(detail => detail.style.display = "none");
                 
                 // Lấy class mục tiêu và hiển thị nội dung khớp với thuộc tính data-target
                 const targetClass = part.getAttribute('data-target');
                 const activeDetail = urlBox.querySelector(`.${targetClass}`);
                 if (activeDetail) {
-                    activeDetail.classList.remove('hidden');
+                    activeDetail.style.display = "block";
                 }
             });
         });
     };
 
-    // Áp dụng tính năng tương tác cho cả 2 khối URL mẫu
+    // Kích hoạt tính năng cho cả 2 khối URL mẫu
     configureUrlInteractive('url1');
     configureUrlInteractive('url2');
 });
